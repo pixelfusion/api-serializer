@@ -4,7 +4,21 @@
 [![Love](http://img.shields.io/badge/built%20with-love-red.svg?style=flat-square)](http://pixelfusion.co.nz)
 [![Awesomeness](http://img.shields.io/badge/awesome-100%25-brightgreen.svg?style=flat-square)](http://pixelfusion.co.nz)
 
-This package provides a custom Serializer for [Fractal](http://fractal.thephpleague.com) that transforms data into the API output that we at [Pixel Fusion](https://pixelfusion.co.nz) prefer. It extends the default ArraySerializer but has two slight differences.
+This package provides a custom Serializer for [Fractal](http://fractal.thephpleague.com) that transforms data into the API output that we at [Pixel Fusion](https://pixelfusion.co.nz) prefer.
+
+## Installation
+
+To install the latest version of this package run the following command:
+
+```
+composer require pixelfusion/api-serializer
+```
+
+After that you should change the serializer that you want to use to `PixelFusion\Fractal\Serializer\ApiSerializer`.
+
+## Output format
+
+This API serializer extends the default ArraySerializer but has two slight differences.
 
 First of all we don't use the meta key in the root of the response. Secondly, for the pagination we omitted the fields that we don't use. Below is an example of how a response that includes pagination will look like:
 
