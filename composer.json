@@ -1,0 +1,25 @@
+{
+    "name": "pixelfusion/api-serializer",
+    "description": "Custom Fractal serializer for our preferred API output.",
+    "keywords": [
+        "api",
+        "fractal",
+        "json",
+        "serializer"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wouter Peschier",
+            "email": "wouter@pixelfusion.co.nz"
+        }
+    ],
+    "require": {
+        "league/fractal": "^0.13.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PixelFusion\\Fractal\\": "src"
+        }
+    }
+}
