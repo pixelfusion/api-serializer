@@ -8,6 +8,20 @@ use League\Fractal\Serializer\ArraySerializer;
 class ApiSerializer extends ArraySerializer
 {
     /**
+     * Serialize a collection. Only uses a resourceKey if it is specifically
+     * set in the presenter.
+     *
+     * @param string $resourceKey
+     * @param array  $data
+     *
+     * @return array
+     */
+    public function collection($resourceKey, array $data)
+    {
+        return $resourceKey === null ? $data : [$resourceKey => $data];
+    }
+
+    /**
      * Serialize the meta.
      *
      * @param array $meta
