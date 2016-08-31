@@ -22,22 +22,6 @@ class ApiSerializer extends ArraySerializer
     }
 
     /**
-     * Serialize the meta.
-     *
-     * @param array $meta
-     *
-     * @return array
-     */
-    public function meta(array $meta)
-    {
-        if (empty($meta) === true) {
-            return [];
-        }
-
-        return $meta;
-    }
-
-    /**
      * Serialize the paginator.
      *
      * @param PaginatorInterface $paginator
