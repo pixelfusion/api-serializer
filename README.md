@@ -18,9 +18,7 @@ After that you should change the serializer that you want to use to `PixelFusion
 
 ## Output format
 
-This API serializer extends the default ArraySerializer but has two slight differences.
-
-First of all we don't use the meta key in the root of the response. Secondly, for the pagination we omitted the fields that we don't use. Below is an example of how a response that includes pagination will look like:
+This API serializer extends the default ArraySerializer but has a slight difference. For the pagination we omitted the fields that we don't use. Below is an example of how a response that includes pagination will look like:
 
 ```json
 {
